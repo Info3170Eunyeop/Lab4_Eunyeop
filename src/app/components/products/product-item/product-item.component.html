@@ -16,6 +16,6 @@
     {{ product.rate }}
   </mat-card-content>
   <mat-card-content class="product-price">
-    ${{ product.price }}
+    <a [routerLink]="['/products', product.price]"> ${{ product.price }} </a>
   </mat-card-content>
 </mat-card>
