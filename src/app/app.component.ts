@@ -27,7 +27,6 @@ export class AppComponent implements OnInit, OnDestroy {
         .reduce((p, n) => p + n, 0);
     });
 
-    this.cart = this._cartService.get();
     this._cartSubscription = this.cart.subscribe((cart) => {
       this.itemCount = cart.items
         .map((x) => x.productId)

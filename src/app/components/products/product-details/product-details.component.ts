@@ -27,7 +27,6 @@ export class ProductDetailsComponent implements OnInit {
 
   ngOnInit() {
     const routeParams = this.route.snapshot.paramMap;
-    console.log(this.route.title);
     const productIdFromRoute = Number(routeParams.get('productId'));
     const productPriceFromRoute = Number(routeParams.get('productPrice'));
 

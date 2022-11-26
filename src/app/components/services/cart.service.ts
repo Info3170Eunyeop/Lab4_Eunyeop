@@ -50,6 +50,8 @@ export class CartService {
     this.calculateCart(cart);
     //this.save(cart);
     this.dispatch(cart);
+
+    console.log(cart.items);
   }
 
   private calculateCart(cart: ShoppingCart): void {
